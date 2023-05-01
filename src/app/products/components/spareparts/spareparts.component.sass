@@ -1,0 +1,47 @@
+@import '../../../../styles'
+
+#spareparts-section
+    .container  
+        display: flex
+        flex-flow: row nowrap
+
+        #filter-container
+            flex-basis: 20%
+            background-color: #F8F8F8
+            padding: 20px 
+        
+        #products-container
+            flex-basis: 75%
+            min-height: 90vh
+            border-left: 1px solid $border-color
+            padding: 20px 
+            display: flex
+            flex-flow: row wrap
+            justify-content: space-around
+            gap: 20px
+
+            .card-container
+                display: flex
+                flex-flow: column nowrap
+                flex-basis: 30%
+                border: 1px solid $border-color
+                padding-bottom: 10px
+                border-radius: 20px
+
+            .button-layout
+                @include flex-center()
+                
+                .details-button
+                    @include flex-center()
+                    background-color: $secundary-color
+                    width: 95%
+                    height: 50px
+                    font-size: 2em
+                    text-decoration: none
+                    color: white
+                    transition: 300ms
+                    border-radius: 10px
+
+                    &:hover
+                        transform: scale(1.02)
+                

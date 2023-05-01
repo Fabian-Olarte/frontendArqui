@@ -1,0 +1,18 @@
+<section id="spareparts-section">
+    <div class="container wrap">
+        <div id="filter-container">
+            fwef
+        </div>
+
+        <div id="products-container">
+            <ng-container *ngFor="let vehicle of vehiclesList">
+                <div class="card-container">
+                    <app-product-card></app-product-card>
+                    <div class="button-layout">
+                        <a [routerLink]="['details']" class="details-button">Detalles</a>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
