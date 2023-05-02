@@ -1,15 +1,29 @@
 <div class="product-card">
     <div class="image-container">
-        <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2019/09/20190902-VENTAS-DE-CARROS-NUEVOS-EN-AGOSTO-2019-01.jpg">
+        <ng-container *ngIf="vehicle">
+            <img *ngIf="vehicle.photoUrl" src={{vehicle.photoUrl}}>
+            <img *ngIf="!vehicle.photoUrl" src="https://www.lakshmihyundai.co.in/images/used-cars/placeholder.png">
+        </ng-container>
+
+        <ng-container *ngIf="sparepart">
+            <img src={{sparepart.photoUrl}}>
+        </ng-container>
+
     </div>
+
     <div class="info-container">
         <div class="info-layout">
-            <h1 class="info-title">{{nombre}} | {{nombre}}</h1>
-            <ng-container *ngIf="nombre">
-                <p class="secundary-info">2023 | 7.000km</p>
+            <ng-container *ngIf="vehicle">
+                <h1 class="info-title">{{vehicle.name}} </h1>
+                <p class="secundary-info">{{vehicle.model}}</p>
+                <h2 class="info-price">${{vehicle.price}}</h2>
             </ng-container>
-            <p class="secundary-info">2022 | 7.000km</p>
-            <h2 class="info-price">$163.000.000</h2>
+
+            <ng-container *ngIf="sparepart">
+                <h1 class="info-title">{{sparepart.name}} </h1>
+                <p class="secundary-info">Disponibles: {{sparepart.serial}}</p>
+                <h2 class="info-price">${{sparepart.price}}</h2>
+            </ng-container>
         </div>
     </div>
 </div>

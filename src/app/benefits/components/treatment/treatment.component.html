@@ -1,1 +1,62 @@
-<p>treatment works!</p>
+<section id="services-section">
+    <div class="container wrap">
+        <div id="filter-container">
+            Filtros
+        </div>
+        
+        <div id="services-container">
+            <h1 class="title">Servicios para tu vehiculo</h1>
+            <ng-container *ngFor="let servicio of serviciosList">
+                <h5 class="subtitle">{{servicio}}</h5>
+                <div id="services-layout">
+                    <ng-container *ngFor="let servicio of serviciosList">
+                        <!--Poner logica de lista por categoria-->
+
+                    </ng-container>
+                    <div class="card-container">
+                        <app-service-card></app-service-card>
+                        <div class="button-layout">
+                            <button class="add-button">Añadir servicio</button>
+                            <button class="favorite-button">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <app-service-card></app-service-card>
+                        <div class="button-layout">
+                            <button class="add-button">Añadir servicio</button>
+                            <button class="favorite-button">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <app-service-card></app-service-card>
+                        <div class="button-layout">
+                            <button class="add-button">Añadir servicio</button>
+                            <button class="favorite-button">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <app-service-card></app-service-card>
+                        <div class="button-layout">
+                            <button class="add-button">Añadir servicio</button>
+                            <button class="favorite-button">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </ng-container>
+
+            
+
+
+        
+        </div>
+    </div>
+</section>

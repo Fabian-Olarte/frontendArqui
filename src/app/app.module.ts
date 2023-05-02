@@ -8,10 +8,12 @@ import { MeetingsModule } from './meetings/meetings.module';
 import { ProductsModule } from './products/products.module';
 import { ProjectsModule } from './projects/projects.module';
 import { UserPreferencesModule } from './userPreferences/user-preferences.module';
+import { HomeComponent } from './home/components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,7 @@ import { UserPreferencesModule } from './userPreferences/user-preferences.module
     MeetingsModule,
     ProductsModule,
     ProjectsModule,
-    UserPreferencesModule
+    UserPreferencesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

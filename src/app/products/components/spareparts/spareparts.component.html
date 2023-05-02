@@ -1,18 +1,22 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
 <section id="spareparts-section">
     <div class="container wrap">
         <div id="filter-container">
             fwef
         </div>
-
+        
         <div id="products-container">
-            <ng-container *ngFor="let vehicle of vehiclesList">
-                <div class="card-container">
-                    <app-product-card></app-product-card>
-                    <div class="button-layout">
-                        <a [routerLink]="['details']" class="details-button">Detalles</a>
+            <div id="products-layout">
+                <ng-container *ngFor="let sparepart of sparepartsList">
+                    <div class="card-container">
+                        <app-product-card [sparepart]="sparepart"></app-product-card>
+                        <div class="button-layout">
+                            <a [routerLink]="['details']" class="details-button">Detalles</a>
+                            <button class="favorite-button"><span class="material-symbols-outlined">favorite</span></button>
+                        </div>
                     </div>
-                </div>
-            </ng-container>
+                </ng-container>
+            </div>
         </div>
     </div>
 </section>
