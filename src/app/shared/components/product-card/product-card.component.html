@@ -4,7 +4,10 @@
     </div>
     <div class="info-container">
         <div class="info-layout">
-            <h1 class="info-title">Chevrolet Blazer 3.6 Rs</h1>
+            <h1 class="info-title">{{nombre}} | {{nombre}}</h1>
+            <ng-container *ngIf="nombre">
+                <p class="secundary-info">2023 | 7.000km</p>
+            </ng-container>
             <p class="secundary-info">2022 | 7.000km</p>
             <h2 class="info-price">$163.000.000</h2>
         </div>

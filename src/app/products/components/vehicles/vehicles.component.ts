@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 export class VehiclesComponent {
 
 
-  vehiclesList = [1,2,3,4,5,6,7]
+  vehiclesList: string[] = ['1', '2', '3']
 }
