@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Spareparts } from 'src/app/models/products/spareparts/spareparts';
+import { Vehicles } from 'src/app/models/products/vehicles/vehicles';
 
 @Component({
   selector: 'app-product-card',
@@ -8,6 +10,8 @@ import { Component, Input } from '@angular/core';
 export class ProductCardComponent {
 
   @Input()
-  nombre: string | undefined;
+  vehicle: Vehicles | undefined;
+  @Input()
+  sparepart: Spareparts | undefined;
 
 }

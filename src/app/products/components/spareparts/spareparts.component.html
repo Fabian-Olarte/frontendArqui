@@ -5,9 +5,9 @@
         </div>
 
         <div id="products-container">
-            <ng-container *ngFor="let vehicle of vehiclesList">
+            <ng-container *ngFor="let sparepart of sparepartsList">
                 <div class="card-container">
-                    <app-product-card></app-product-card>
+                    <app-product-card [sparepart]="sparepart"></app-product-card>
                     <div class="button-layout">
                         <a [routerLink]="['details']" class="details-button">Detalles</a>
                     </div>

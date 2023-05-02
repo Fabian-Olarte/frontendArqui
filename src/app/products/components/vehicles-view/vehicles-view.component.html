@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 <section id="vehicle-view-section">
 
@@ -10,14 +11,14 @@
     </div>
 
     <div class="image-layout">
-        <img class="d-block" src="https://www.elcarrocolombiano.com/wp-content/uploads/2019/10/20191013-CHEVROLET-BLAZER-RS-PRUEBA-DE-MANEJO-01.jpg" alt="First slide">
+      <img class="d-block" src={{vehicle.photoUrl}} alt="First slide">
     </div>
 
     <div class="primary-info-layout">
 
       <div class="description-container">
-        <h1>Chevrolet Blazer 3.6 Rs</h1>
-        <p>2022 | 7.000km</p>
+        <h1>{{vehicle.type}}</h1>
+        <p>Precio: {{vehicle.price}}</p>
       </div>
 
       <div class="buy-botton-container">
@@ -32,59 +33,54 @@
         <p class="secundary-title">Descripción</p>
         <div class="description-layout">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            malesuada dictum scelerisque. Nam auctor hendrerit sagittis. Aliquam
-            ac ullamcorper diam. Praesent in sapien nec nunc finibus viverra
-            vitae tempus odio. Pellentesque volutpat nec sem et pretium.
-            Vestibulum efficitur, risus non tempus ultricies, elit elit dapibus
-            dolor, in aliquam ipsum diam a ex.
+            {{vehicle.description}}
           </p>
         </div>
       </div>
 
       <div class="features-container">
         <div class="title-features">
-            <h5>Caracteristicas</h5>
+          <h5>Caracteristicas</h5>
         </div>
         <div class="feature">
-            <div class="label">
-                <p>Marca</p>
-            </div>
-            <div class="info-feature">
-                <p>Chevrolet</p>
-            </div>
-        </div>
-        <div class="feature" >
-            <div class="label">
-                <p>Modelo</p>
-            </div>
-            <div class="info-feature">
-                <p>2020</p>
-            </div>
+          <div class="label">
+            <p>Marca</p>
+          </div>
+          <div class="info-feature">
+            <p>{{vehicle.brand}}</p>
+          </div>
         </div>
         <div class="feature">
-            <div class="label">
-                <p>Kilometraje</p>
-            </div>
-            <div class="info-feature">
-                <p>7000</p>
-            </div>
+          <div class="label">
+            <p>Tipo</p>
+          </div>
+          <div class="info-feature">
+            <p>Camioneta</p>
+          </div>
         </div>
         <div class="feature">
-            <div class="label">
-                <p>Tipo</p>
-            </div>
-            <div class="info-feature">
-                <p>Camioneta</p>
-            </div>
+          <div class="label">
+            <p>Modelo</p>
+          </div>
+          <div class="info-feature">
+            <p>{{vehicle.model}}</p>
+          </div>
         </div>
         <div class="feature">
-            <div class="label">
-                <p>Origen</p>
-            </div>
-            <div class="info-feature">
-                <p>Bogota</p> 
-            </div>
+          <div class="label">
+            <p>Kilometraje</p>
+          </div>
+          <div class="info-feature">
+            <p>7000</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="label">
+            <p>Placa</p>
+          </div>
+          <div class="info-feature">
+            <p>{{vehicle.plate}}</p>
+          </div>
         </div>
       </div>
     </div>
